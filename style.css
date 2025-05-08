@@ -1,0 +1,95 @@
+/* 전체 레이아웃 */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border: 5px solid black;
+    margin: 30px;
+    padding: 20px;
+  }
+  
+  /* 상단 제목 */
+  header {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* 내비게이션 바 */
+  nav {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #0033cc;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  nav a.active {
+    text-decoration: underline;
+  }
+  
+  /* 본문 제목 */
+  main h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  /* 본문 설명 */
+  main p {
+    font-size: 18px;
+    width: 60%;
+    margin: 0 auto 20px;
+  }
+  
+  /* 아래 링크들 */
+    .links a {
+        display: inline-block;
+        padding: 10px 16px;
+        margin: 8px;
+        background-color: #0033cc;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+      
+      .links a:hover {
+        background-color: #001f80;
+      }
+  .contact-info {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  .contact-info li {
+    margin: 10px 0;
+  }
+  .resource-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  .resource-list li {
+    margin: 10px 0;
+  }
+  
+  .resource-list a {
+    color: #0033cc;
+    text-decoration: underline;
+  }
+  .profile-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 0;
+    object-fit: contain;
+    margin: 20px 0;
+  }  
