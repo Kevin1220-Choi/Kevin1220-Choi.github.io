@@ -1,95 +1,82 @@
-/* 전체 레이아웃 */
+/* 기본 설정 및 폰트 */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    border: 5px solid black;
-    margin: 30px;
-    padding: 20px;
-  }
-  
-  /* 상단 제목 */
-  header {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  /* 내비게이션 바 */
-  nav {
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  nav a {
-    margin: 0 20px;
-    text-decoration: none;
-    color: #0033cc;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  
-  nav a.active {
-    text-decoration: underline;
-  }
-  
-  /* 본문 제목 */
-  main h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
-  
-  /* 본문 설명 */
-  main p {
-    font-size: 18px;
-    width: 60%;
-    margin: 0 auto 20px;
-  }
-  
-  /* 아래 링크들 */
-    .links a {
-        display: inline-block;
-        padding: 10px 16px;
-        margin: 8px;
-        background-color: #0033cc;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-      }
-      
-      .links a:hover {
-        background-color: #001f80;
-      }
-  .contact-info {
-    list-style-type: none;
-    padding: 0;
-    font-size: 18px;
-  }
-  
-  .contact-info li {
-    margin: 10px 0;
-  }
-  .resource-list {
-    list-style-type: none;
-    padding: 0;
-    font-size: 18px;
-  }
-  
-  .resource-list li {
-    margin: 10px 0;
-  }
-  
-  .resource-list a {
-    color: #0033cc;
-    text-decoration: underline;
-  }
-  .profile-photo {
-    width: 200px;
-    height: auto;
-    border-radius: 0;
-    object-fit: contain;
-    margin: 20px 0;
-  }  
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 헤더 */
+header {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 30px 0;
+  background-color: #0033cc;
+  color: white;
+  margin-bottom: 0;
+}
+
+/* 내비게이션 */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #0033cc;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+}
+
+nav a.active::after {
+  content: "";
+  display: block;
+  margin: 5px auto 0;
+  width: 50%;
+  height: 3px;
+  background-color: #0033cc;
+  border-radius: 2px;
+}
+
+/* 메인 콘텐츠 */
+main {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+main h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* 링크 버튼 */
+.links a {
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 24px;
+  background-color: #0033cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #001f80;
+}
